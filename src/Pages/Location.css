@@ -1,0 +1,47 @@
+.location {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.location h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+.location p {
+  color: #4b5563;
+  margin-bottom: 30px;
+}
+
+.location-details {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.address-card,
+.contact-card {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+}
+
+.address-card strong,
+.contact-card strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Responsive: Mobile / small screens */
+@media (max-width: 768px) {
+  .location-details {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}

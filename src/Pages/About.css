@@ -1,0 +1,60 @@
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9fafb; /* subtle background for contrast */
+}
+
+.about h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: #151516; /* accent color */
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: #4b5563;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* ensures responsiveness */
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 220px;
+  flex: 1; /* makes cards grow equally */
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  color: #111827;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Responsive: stack cards vertically on small screens */
+@media (max-width: 768px) {
+  .about-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* fill most of the screen on mobile */
+  }
+}
