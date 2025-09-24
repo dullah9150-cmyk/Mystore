@@ -80,7 +80,7 @@
     position: absolute;
     top: 60px;
     right: 20px;
-    background: #E6E6FA; /* Lavender dropdown */
+    background: white; /* Lavender dropdown */
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(10, 9, 10, 0.2);
