@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Location from "./pages/Location";
 import "./index.css";
 import Footer from "./Components/Footer";
+import Whatsapp from "./Components/Whatspp"
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <Whatsapp />
     </Router>
+   
   );
 }
 

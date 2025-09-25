@@ -1,0 +1,56 @@
+/* WhatsApp Alert Bubble */
+.whatsapp-alert-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+/* WhatsApp Logo inside the bubble */
+.whatsapp-bubble-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Text inside bubble */
+.whatsapp-bubble-text {
+  font-weight: 500;
+}
+
+/* Gentle pulse animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+@media (max-width: 1024px) {
+  .whatsapp-alert-bubble {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .whatsapp-bubble-icon {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .whatsapp-bubble-text {
+    display: none; /* hide text */
+  }
+}
