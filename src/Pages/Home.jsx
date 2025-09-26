@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Home.css";
+import image from "../../src/assets/AA.jpg";
 
 export default function Home() {
   return (
@@ -10,9 +11,11 @@ export default function Home() {
           Shop smarter with us — discover daily essentials, unique products,
           and local favorites all in one place.
         </p>
-        <Link to="/about" className="btn">
-          Learn More
-        </Link>
+        <div className="hero-resume">
+          <a href={image} target="_blank" rel="noopener noreferrer">
+            View My Notice
+          </a>
+        </div>
       </div>
 
     </section>

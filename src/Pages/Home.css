@@ -24,20 +24,29 @@
   color: #374151;
 }
 
-.btn {
-  padding: 12px 24px;
-  background: var(--accent);
-  color:black;
-  border-radius: 8px;
+.hero-resume a {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
   font-weight: 600;
-  text-decoration: none;
-  transition: background 0.3s;
+  color: #fff;
+  text-decoration: none; /* removes underline */
+  background: linear-gradient(135deg, #000000, #434343); /* Black gradient */
+  border: 2px solid #fff; /* White border */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.btn:hover {
-  background:wheat
+.hero-resume a:hover {
+  background: linear-gradient(135deg, #434343, #000000); /* Reverse gradient */
+  color: #000; /* text turns black */
+  background: #fff; /* button turns white */
+  border: 2px solid #000; /* black border */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
-
 .home-image img {
   max-width: 100%;
   border-radius: 16px;
